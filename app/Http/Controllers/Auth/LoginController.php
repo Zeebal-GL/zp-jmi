@@ -103,7 +103,7 @@ class LoginController extends Controller
             $user = User::find(session('2fa:user:id'));
 
             $data = array('name'=> @$user->name,'otp'=>$otp);            
-            // $text = '<h3>Hi, '. $user->name .'</h3><p>ZP | Auth OTP Login:</p>One Time Pasword: '.  $otp;
+            // $text = 'Hi '. $user->name .' , Your One Time Pasword is: '.  $otp;
             
             // $message = $this->twilio->messages
             //       ->create("+12124959980", // to
@@ -116,7 +116,7 @@ class LoginController extends Controller
             $mail = Mail::send('mail', $data, function($message) use($user) {           
                 $message->to('zeebalakhtar666@gmail.com')->subject
                 ('ZP | Auth OTP Notification');
-                $message->from('JMI@no-reply.com','ZP');            
+                $message->from('ZP@no-reply.com','ZP');            
             });
 
             if (Mail::failures()) 
