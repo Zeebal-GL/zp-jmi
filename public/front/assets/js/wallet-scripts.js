@@ -1,0 +1,13 @@
+$('.withdraw').click(function(){
+        $(this).parents('.card').addClass('flipped');
+        $(this).parents('.card').find('.deposit_active').hide();
+    });  
+     $('.deposit').click(function(){
+        $(this).parents('.card').addClass('flipped');
+        $(this).parents('.card').find('.withdraw_active').hide();
+    });   
+     $('.flip-close').click(function(){
+        $(this).parents('.card').removeClass('flipped');
+        $(this).parents('.card').find('.deposit_active').show();
+        $(this).parents('.card').find('.withdraw_active').show();
+    });

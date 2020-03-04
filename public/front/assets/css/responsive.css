@@ -1,0 +1,153 @@
+@media (max-width: 1200px) {
+.profile-viewform .no-pl {padding-left: 0!important;}
+.edit-profile-page .col-lg-12.pr-form {padding: 0;}  
+.col-lg-12 > label.pull-right.text-primary { float: none!important;} 
+.announce-page .col-xs-12 {float: none;}
+.chat-section ul{ height: auto; }
+.chat-box{max-width: 100%;}
+.chat-box .text {width: calc(100% - 60px);}
+#validateTradeForm .wrap-hour h4 a.info-data{top: 0;}
+}
+@media screen and (min-width: 1101px) and (max-width: 1200px) {
+.opening-hours select.custom-select {padding: 0;}	
+.trade-form .select2-container, .trade-page textarea[name="payment_detail"] {width: 63%!important;}
+.control.full-spn { width: 62%;}
+
+}
+@media (max-width: 1100px) {
+.opening-hours select.custom-select{padding: 0 5px;}
+.trade-box .trade-form .select2-container, .trade-box .trade-page textarea[name="payment_detail"] {width: 99%!important;}
+.trade-form .select2-container, .trade-page textarea[name="payment_detail"] {width: 99%!important;}
+.opening-hours .col-md-3.col-sm-6 {max-width: 100%;width: 50%;}
+.user-id span { padding: 3px 10px;}
+#validateTradeForm a.info-data{top: 25px;}
+.full-spn .info-data, .PriceEquation a.info-data { top: -13px!important;}
+.trade-box {padding: 20px;}
+.trade-form label.control-label {display: block;width: 100%;}
+.register table.table.ms-transaction-view th, .register table.table.ms-transaction-view td {width: 50%;
+    display: -webkit-inline-box; word-break: break-all; padding: 10px 0; overflow: inherit;max-width: inherit;white-space: inherit;}
+}
+@media screen and (min-width: 769px) and (max-width: 1100px) {
+#validateTradeForm a.info-data { top: 11px;}
+.full-spn .info-data, .PriceEquation a.info-data { top: -24px!important;right: -3px !important;}
+}
+@media (max-width: 990px) {
+.chat-section{ width: 100%;}
+.chat-section ul{ max-width: 100%;margin-bottom: 20px; height: auto;}
+}
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+.group-head.left {float: none;}
+.group-right {width: 100%;float: none;}
+#trade-page-form .form-group > div > .col-md-6.col-sm-12{padding: 0 5px;}
+.group-right h4 {margin-top: -48px;  margin-left: 30px;}	
+.wrap-hour {margin-top: -48px;margin-left: 30px;}
+.group-right .wrap-hour h4 {margin: 0;}
+}
+@media (max-width: 767px) {
+.logo-area-inner img{max-width: 245px;}   
+ label.col-form-label{width: 200px; float: left;}  
+.profile-viewform .col-sm-12 {padding-left: 0;}
+.page-topbar li.dropdown.dropdown-lang { display: none;}
+.page-topbar.sidebar_shift li.dropdown.dropdown-lang { display: block;}
+.page-topbar .quick-area .pull-right ul.info-menu{padding: 0;}
+.page-topbar .quick-area .info-menu li.notify-toggle-wrapper.notify-2 {right: 292px;}
+.page-topbar .quick-area .info-menu li.notify-toggle-wrapper { right: 340px;}
+.panel-body.main-filter-dv > .row {padding: 0 10px!important;}
+section header.panel_header .title, .kycStatus{  float: none!important;}
+.trade-box-view-detail label {max-width: 170px; width: 50%;}
+.sidebar_shift .logo-area > a {height: 60px;display: block;}
+.page-topbar .quick-area .info-menu li.dropdown-lang .dropdown-menu {width: auto;left: 0;}
+.withdraw_active .content-body {overflow: auto;max-height: 360px;padding: 5px 20px 20px!important;}
+.flip{ height: 415px;}
+.stats h3.mb-5 {font-size: 18px;}
+.col-lg-6.buy-sell-cls {margin-bottom: 20px;}
+section.box .actions {position: relative; right: inherit;top: inherit;float: left!important;margin-left: 20px;}
+.dispute_view h2.pull-right.text-danger, .contact-view h2.pull-right.text-danger { float: left!important;margin: 0 0 0 20px!important;}
+a.info-data{ top: 86px; position: absolute;right: 14px;}
+.PriceEquation a.info-data {right: -7px;  top: 40px;}
+.control.full-spn, .PriceEquation .control, .trade-form label.control-label{width: 99%;}
+.responsive-tabs-container.accordion-sm .nav-tabs{display: none;}
+a.tab_drawer_heading { display: none;margin-bottom: 10px; padding: 10px 15px;background-color: #eaeef9;border-radius: 3px; border: 1px solid #ddd; color: #333;}
+a.d_active.tab_drawer_heading { display: block;border-radius: 4px 4px 0 0px;}
+.responsive-tabs-container[class*="accordion-"] .tab-pane {border: 1px solid #ddd; border-top: none;border-top-left-radius: 0;border-top-right-radius: 0;
+    border-width: medium 1px 1px;margin-bottom: 10px; margin-top: -10px;padding: 10px 10px;}
+.responsive-tabs-container.accordion-sm .tab_drawer_heading {display: block;text-decoration: none;}
+.accordion-sm .tab-content { border: none; padding: 0;}
+.copyright h4 span {display: block;float: none!important;margin-bottom: 7px;}
+.chat-section {padding: 0;}
+.user-id span {padding: 3px 15px;}
+}
+@media screen and (min-width: 681px) and (max-width: 767px) {
+  .page-topbar .quick-area .info-menu li .dropdown-menu{left: 0;}  
+}
+@media (max-width: 600px) {
+table.table-bordered {overflow-x: auto;display: block; border-spacing: 0;width: 100%;}  
+.trade-box{ padding:15px;}
+.opening-hours .col-md-3.col-sm-6 {width:100%;}
+.my-profile-page .ms-section-content {padding: 20px 20px!important;}
+section header.panel_header .title {padding-left: 12px;}
+.trade-box-view-detail {padding: 20px;}
+.trade-box-view-detail label {max-width: 170px; width: 100%;}
+.group-head.left {float: none;}
+.group-right {width: 100%;float: none;}
+#trade-page-form .form-group > div > .col-md-6.col-sm-12{padding: 0 5px;}
+.group-right h4 {margin-top: -48px;  margin-left: 30px;}
+.wrap-hour {margin-top: -48px;margin-left: 30px;}
+.group-right .wrap-hour h4 {margin: 0;}
+.isd-phn input.ms_mobile {width: 100%;margin: 10px 0 0;}
+.isd-phn div#mobile-error {left: inherit;position: inherit;bottom: inherit;}
+.avatar-img .form-group {display: block;}
+.avatar-img .form-group{ padding-left: 0;margin-top: 10px;}
+.trade-box .trade-form .select2-container, .trade-box .trade-page textarea[name="payment_detail"] {width: 96%!important;}
+.control.full-spn, .PriceEquation .control, .trade-form label.control-label {width: 96%;}
+.trade-box .trade-form .select2-container, .trade-box .trade-page textarea[name="payment_detail"] {width: 96%!important;}
+a.info-data{ right: 10px;}
+.timeline2-centered .timeline2-entry .timeline2-entry-inner .timeline2-label {border: 1px solid #294f83!important;}
+.timeline2-centered .timeline2-entry .timeline2-entry-inner .timeline2-icon, .timeline2-centered .timeline2-entry .timeline2-entry-inner .timeline2-label {
+    float: none!important;margin: 0 auto 20px!important;}
+.timeline2-centered .timeline2-entry .timeline2-entry-inner .timeline2-label:after {
+    top: -21px!important;left: 0!important;right: 0;margin: auto!important;border-color: transparent transparent #294f83 transparent!important;    
+    border-width: 10px 10px 10px 10px!important;}
+.timeline2-centered .timeline2-entry .timeline2-entry-inner, .timeline2-centered .timeline2-entry{ margin-left: 0!important;}
+.timeline2-centered:before{display: none!important;}
+}
+@media (max-width: 480px) {
+.issue-box{padding: 5px 12px!important;}
+.issue-user {margin: 5px 0;}
+.issue-box h4{ clear: both;font-size: 14px;}
+.issue-date { margin: 0!important; float: left!important;}
+.dispute_view h2.pull-right.text-danger, .contact-view h2.pull-right.text-danger { margin: 0 0 0 12px!important;}
+.chat-box{ width: 100%; }
+.btn-group.select-data.pull-right { margin-top: 0!important;}
+.page-topbar li .dropdown-menu li.list { padding: 0 20px;}
+.page-topbar .quick-area .info-menu li.notify-1 .dropdown-menu {width: 270px; left: -120px;}
+.page-topbar .quick-area .info-menu li.notify-2 .dropdown-menu {width: 270px; left: -150px;}
+}
+@media (max-width: 420px) {
+.main-wrapper{ padding: 15px 5px 0 5px;}
+.btn-group.select-data {margin-top: 0;float: left!important;}   
+.opening-hours .col-md-3.col-sm-6 {padding: 0 6px;}
+.col-lg-12.mb-20.upload-file-sec {display: block;}
+.upload-file-sec .avatar-img.pull-left {float: none!important;}
+.upload-file-sec {}
+ label.col-form-label{width: 100%;
+    float: none;}   
+.r4_counter .stats { margin-left: 40px;}  
+.r4_counter .stats h3 {font-size: 20px;}
+.page-sidebar, .page-topbar .logo-area{ width: 180px;}
+#main-menu-wrapper li a i {width: 32px; height: 32px;line-height: 32px;}
+#main-menu-wrapper .wraplist li a i {width: 45px;}
+.logo-area-inner img {max-width: 158px; margin-top: 10px;}
+h1.title {font-size: 25px;}
+.form-box p.kyc-info {margin-left: 10px;}
+.trade-box-view-detail label {display: block;}
+.trade-box-view-detail > .form-group > .pull-right { float: left!important;margin-bottom: 20px;}
+#main-menu-wrapper li .sub-menu a{ padding-left: 35px;width: 178px;white-space: nowrap;overflow: hidden;text-overflow: ellipsis; }
+.page-topbar .quick-area .info-menu li.notify-toggle-wrapper {right: 120px!important;}
+.page-topbar .quick-area .info-menu li.notify-toggle-wrapper.notify-2 {right: 82px!important;}
+a.ccc-tab-content-EUR div, a.ccc-tab-content-USD div, a.ccc-tab-content-GBP div, a.ccc-tab-content-INR div {
+    float: none!important;display: table-footer-group;}
+.chat-box .text { width: 100%;}
+input[type=file] {width: 182px;}
+}
+
