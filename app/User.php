@@ -2,6 +2,7 @@
 
 namespace App;
 
+use Auth;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 
@@ -31,5 +32,19 @@ class User extends Authenticatable
     {
         $arrUser = self::where($column, '=', $value)->first();
         return ($arrUser ? $arrUser : false);
+    }
+
+    //Check whether login user is admin or not
+    public function isAdmin()
+    {
+        $user = Auth::user();
+        return ($user->user_type == 'A') ? true : false;
+    }
+
+    //Get Login User Type: student/Tutor/Admin
+    public static function getUserType()
+    {
+        $user = Auth::user();
+        return $user->user_type;
     }
 }

@@ -16,7 +16,7 @@
                             <label for="email" class="col-md-4 control-label">Please enter your 2FA OTP</label>
 
                             <div class="col-md-6">
-                                <input placeholder="One Time Password Received on Mail" maxlength="6" onkeyup="this.value=this.value.replace(/[^0-9]/g,'')"  class="form-control" required name="totp" autofocus >
+                                <input placeholder="OTP from 2FA-Device" maxlength="6" onkeyup="this.value=this.value.replace(/[^0-9]/g,'')"  class="form-control" required name="totp" autofocus >
 
                                  @if($errors->has('totp'))
                                     <span class="help-block">

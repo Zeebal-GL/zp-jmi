@@ -87,7 +87,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    ZP | 2-Way Auth Project
+                    {{ config('app.name', 'Laravel') }}
                 </div>
           <!--   <img class="toggle-logo logo-white" src="{{ asset('front/images/logo.png') }}" alt=""> -->
                 <div class="links">
