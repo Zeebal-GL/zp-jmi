@@ -39,3 +39,5 @@ Route::group(['middleware' => ['web']], function () {
     Route::post('/2fa/validate', ['uses' => 'Auth\LoginController@postValidateToken']);
     Route::post('/2fa/validateotp', ['uses' => 'Auth\LoginController@postValidateOtpToken']);
 });
+
+Route::post('admin/set2FAStatus', 'HomeController@set2FAStatus')->middleware('is_admin');

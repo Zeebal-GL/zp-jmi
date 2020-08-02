@@ -30,28 +30,32 @@
                     <tr>
                         <th>User Name</th>
                         <th>Email Address</th>
-                        <th>2FA Status</th>
+                        <th>2FA Status (Current)</th>
                         <th style="text-align:center;">Action</th>
                     </tr>
                     </thead>
                     <tbody>
                     @isset($data)
                         @foreach($data as $user)
-                            <tr class="@if($user->google2fa_secret) danger @else success @endif">
-                                <td>{{ $user->name }}</td>
-                                <td>{{ $user->email }}</td>
-                                <td>
+                            <tr class="@if($user->google2fa_secret) success @else danger @endif">
+                                <td style="color: blue"><b>{{ ucfirst($user->name) }}</b></td>
+                                <td style="color: blue"><b>{{ $user->email }}</b></td>
+                                <td style="color: blue">
                                     @if($user->google2fa_secret)
-                                        Enable
+                                        <b>Enable</b>
                                     @else
-                                        Disabled
+                                        <b>Disabled</b>
                                     @endif
                                 </td>
                                 <td align="center">
                                     @if($user->google2fa_secret)
-                                        <button type="button" class="btn btn-danger">Disable 2FA</button>
+                                        <button type="button" onclick="set2FAStatus({{ $user->id }})"
+                                                class="btn btn-danger">Disable 2FA
+                                        </button>
                                     @else
-                                        <button type="button" class="btn btn-success">Enable 2FA</button>
+                                        <button type="button" onclick="set2FAStatus({{$user->id}}, 1)"
+                                                class="btn btn-success">Enable 2FA
+                                        </button>
                                     @endif
 
                                 </td>
@@ -64,3 +68,28 @@
         </div>
     </div>
 @endsection
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script>
+    function set2FAStatus(userId, status = 0) {
+        $.ajax({
+            url: '{{ url('admin/set2FAStatus') }}',
+            type: 'POST',
+            data: {
+                'userId': userId,
+                'status': status,
+                '_token': '{{ csrf_token() }}',
+            },
+            success: function (data) {
+                if (data.success) {
+                    alert(data.message)
+                } else {
+                    alert(data.message)
+                }
+                location.reload();
+            }, error: function (res, status) {
+                console.log('Error in Ajax Response');
+            }
+        });
+    }
+</script>

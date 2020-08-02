@@ -74,14 +74,19 @@ class LoginController extends Controller
                 return redirect('/login')->withErrors(['fails' => 'Invalid Email or Password !']);
             }
 
-            Auth::logout();
-            $redirectTo = $request->get('redirect');
-            $request->session()->put('2fa:user:id', $user->id);
 
-            if ($redirectTo == '') {
-                return redirect('/2fa/validate');
+            if (($user->google2fa_secret) || ($user->user_type == 'A')) {
+                Auth::logout();
+                $redirectTo = $request->get('redirect');
+                $request->session()->put('2fa:user:id', $user->id);
+
+                if ($redirectTo == '') {
+                    return redirect('/2fa/validate');
+                } else {
+                    return redirect(url('/') . '/' . $redirectTo);
+                }
             } else {
-                return redirect(url('/') . '/' . $redirectTo);
+                return redirect('/home')->with('status', 'Login Successfully.');
             }
 
         } catch (Exception $ex) {
