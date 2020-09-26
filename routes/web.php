@@ -15,6 +15,8 @@
 //    return view('welcome');
 //});
 
+
+
 Route::get('/', function () {
     if (Auth::check() && Auth::user()->user_type == 'A') {
         return redirect(route('admin.home'));
@@ -26,6 +28,9 @@ Route::get('/', function () {
 Auth::routes();
 
 //Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/face-login', 'PhotosController@showForm');
+Route::post('/face-login', ['uses' => 'PhotosController@submitForm', 'as' => 'face-login']);
 
 Route::get('admin/home', 'HomeController@adminHome')->name('admin.home')->middleware('is_admin');
 Route::get('/home', 'HomeController@home')->name('home')->middleware('is_user');

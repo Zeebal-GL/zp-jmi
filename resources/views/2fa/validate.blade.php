@@ -8,6 +8,12 @@
                 <div class="panel-heading"> <label >2FA Login </label></div>
 
                 <div class="panel-body">
+                @if (session('login_for'))
+                    <div class="alert alert-success">
+                        Congratulation. Face Login Success!. <br>
+                        You are trying to login for:<b> {{ session('login_for') }} </b>
+                    </div>
+                @endif
                     <form class="form-horizontal" method="POST" action="/2fa/validate">
                         {{ csrf_field() }}
 
